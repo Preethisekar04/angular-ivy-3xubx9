@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class FoodService {
-  private readonly FOOD_URL = 'http://starlord.hackerearth.com/recipe';
+  // private readonly FOOD_URL = 'http://starlord.hackerearth.com/recipe';
+    private readonly  FOOD_URL = 'assets/recipes.json';
   constructor(private http: HttpClient) {}
 
   getFoodItems = (): Observable<Recipe[]> => {
